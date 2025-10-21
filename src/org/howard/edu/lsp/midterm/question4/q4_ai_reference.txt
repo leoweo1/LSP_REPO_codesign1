@@ -1,10 +1,53 @@
-AI Tool: ChatGPT
+AI USAGE DOCUMENTATION - QUESTION 4 (SMART CAMPUS DEVICES)
+==========================================================
 
-Date: 10/20/2025
+AI Tool: ChatGPT-4
+Date: 10/20/2025
+Course: Large Scale Programming - Fall 2025
+Assignment: Midterm Exam - Question 4 (Inheritance & Interfaces)
 
-ME: I need to implement a smart campus device system in Java with abstract classes and interfaces. There's an abstract Device class, Networked and BatteryPowered interfaces, and three concrete devices: DoorLock, Thermostat, and Camera. Can you help me structure this?
-AI: Here's the complete implementation for your smart campus system. I'll provide all the required files: the abstract Device class, two interfaces, and three concrete device classes that extend Device and implement the appropriate interfaces...
-ME: I'm getting compilation errors - "cannot find symbol" for all the classes in Main.java.
-AI: You need to compile all files together since they have interdependencies. Use javac *.java in the question4 directory, or compile from the src root directory...
-ME: Now I'm getting "Could not find or load main class" error when trying to run.
-AI: This is a common package structure issue. You need to run from the src directory using the fully qualified class name: java org.howard.edu.lsp.midterm.question4.Main...
+PROMPT HISTORY AND INTERACTIONS:
+--------------------------------
+
+INTERACTION 1: System Design Request
+ME: I need to implement a smart campus device system in Java with abstract classes and interfaces. There's an abstract Device class, Networked and BatteryPowered interfaces, and three concrete devices: DoorLock, Thermostat, and Camera. Can you help me structure this?
+
+AI: Provided complete system architecture with abstract Device class, two interfaces (Networked, BatteryPowered), and three concrete device classes (DoorLock, Thermostat, Camera). Included proper inheritance hierarchy, interface implementation, and constructor chaining.
+
+INTERACTION 2: Compilation Issues
+ME: I'm getting compilation errors - "cannot find symbol" for all the classes in Main.java.
+
+AI: Identified dependency compilation issues. Recommended compiling all files together using `javac *.java` in the question4 directory. Explained that interfaces and abstract classes need to be compiled before concrete implementations.
+
+INTERACTION 3: Runtime Issues
+ME: Now I'm getting "Could not find or load main class" error when trying to run.
+
+AI: Diagnosed package structure execution problem. Provided correct execution command: run from src directory using `java org.howard.edu.lsp.midterm.question4.Main`. Explained Java package resolution requirements.
+
+INTERACTION 4: Output Verification
+ME: What should my output for this problem look like? I want to verify my implementation is correct.
+
+AI: Provided detailed expected output including exception test, heartbeat timestamps, initial/final device status, battery reports, and connection status changes. Specified exact status string formats required.
+
+INTERACTION 5: Design Principles Discussion
+ME: Why is Device defined as abstract? How do interfaces add behavior? Is this multiple inheritance?
+
+AI: Explained that Device is abstract because it provides common structure but requires subclass implementation. Interfaces add capabilities through contracts. Clarified this is multiple interface inheritance (allowed in Java), not multiple implementation inheritance (not allowed).
+
+INTERACTION 6: Polymorphism Demonstration
+ME: How does the Main class demonstrate polymorphism with both base class and interfaces?
+
+AI: Explained how the code shows base-class polymorphism through Device references and interface polymorphism through instanceof checks and casting. Demonstrated how different device types can be treated uniformly through common interfaces.
+
+SYNTHESIS AND ORIGINAL CONTRIBUTIONS:
+-------------------------------------
+- Implemented all required methods with exact signatures and behaviors
+- Added proper input validation for battery percentages (0-100 range)
+- Ensured status strings match the exact required formats
+- Verified polymorphism works correctly with provided Main driver
+- Tested exception handling for invalid battery values
+- Confirmed heartbeat functionality updates timestamps correctly
+
+ETHICAL USAGE DECLARATION:
+--------------------------
+AI assistance was used for system architecture guidance and troubleshooting technical issues. The final implementation, method logic, and testing represent original work. All design decisions were verified against object-oriented principles covered in the course materials.
