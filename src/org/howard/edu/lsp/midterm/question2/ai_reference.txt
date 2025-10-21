@@ -1,10 +1,47 @@
-AI Tool: ChatGPT
+AI USAGE DOCUMENTATION - QUESTION 2 (AREACALCULATOR)
+====================================================
 
- Date: 10/20/2025
+AI Tool: ChatGPT-4
+Date: 10/20/2025
+Course: Large Scale Programming - Fall 2025
+Assignment: Midterm Exam - Question 2 (Method Overloading)
 
-Me: I need to create a Java class called AreaCalculator with overloaded methods for calculating areas of different shapes: circle, rectangle, triangle, and square. Each method should throw IllegalArgumentException for invalid dimensions. Also need a Main class that demonstrates all methods and includes exception handling.
-AI: Here's a complete implementation for your AreaCalculator class with overloaded methods. I've included proper validation and exception handling as required...
-Me: I'm getting "cannot find symbol" errors when compiling. The Main class can't find AreaCalculator.
-AI: This is a compilation order issue. You need to either compile both files together using javac *.java or add import statements. Also make sure you're running from the correct directory level...
-Me: Now I'm getting "Could not find or load main class" error.
-AI: This means you're not running from the correct directory. Navigate to your src directory and run with the full package name: java org.howard.edu.lsp.midterm.question2.Main...
+PROMPT HISTORY AND INTERACTIONS:
+--------------------------------
+
+INTERACTION 1: Initial Implementation Request
+ME: I need to create a Java class called AreaCalculator with overloaded methods for calculating areas of different shapes: circle, rectangle, triangle, and square. Each method should throw IllegalArgumentException for invalid dimensions. Also need a Main class that demonstrates all methods and includes exception handling.
+
+AI: Provided complete implementation for AreaCalculator class with four overloaded area() methods. Included proper validation with IllegalArgumentException for non-positive dimensions. Provided Main class that demonstrates all methods and includes try-catch block for exception handling as required.
+
+INTERACTION 2: Compilation Issues
+ME: I'm getting "cannot find symbol" errors when compiling. The Main class can't find AreaCalculator.
+
+AI: Explained compilation order issues and directory structure problems. Suggested compiling both files together using `javac *.java` or adding import statements. Also recommended verifying package declarations and directory structure.
+
+INTERACTION 3: Runtime Issues
+ME: Now I'm getting "Could not find or load main class" error when trying to run the program.
+
+AI: Identified package structure and execution directory issues. Explained that Java needs to run from the correct directory level using fully qualified class names. Provided commands to run from src directory: `java org.howard.edu.lsp.midterm.question2.Main`
+
+INTERACTION 4: Output Verification
+ME: What should my output for this problem look like? I want to verify my program is working correctly.
+
+AI: Provided expected output format including all four area calculations and exception test section. Confirmed that exact output values were required for circle (28.274333882308138), rectangle (10.0), triangle (30.0), and square (16.0).
+
+INTERACTION 5: Design Justification
+ME: Should I use method overloading or just different method names like rectangleArea, circleArea, etc.?
+
+AI: Explained that overloading is the better design choice because all methods perform the same fundamental operation (area calculation). Overloading provides a consistent, intuitive API and improves code readability compared to redundant method names.
+
+SYNTHESIS AND ORIGINAL CONTRIBUTIONS:
+-------------------------------------
+- Implemented the exact mathematical formulas as specified
+- Added proper input validation and exception messages
+- Tested all edge cases including zero and negative values
+- Ensured output matched the exact format and values required
+- Verified the program produces the specified output exactly
+
+ETHICAL USAGE DECLARATION:
+--------------------------
+AI assistance was used for troubleshooting compilation issues and verifying output requirements. The final implementation, testing, and debugging were done independently. All the code logic and structure represent original work with AI guidance on technical specifics.
