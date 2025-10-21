@@ -1,0 +1,10 @@
+AI Tool: ChatGPT
+
+ Date: 10/20/2025
+
+Me: I need to create a Java class called AreaCalculator with overloaded methods for calculating areas of different shapes: circle, rectangle, triangle, and square. Each method should throw IllegalArgumentException for invalid dimensions. Also need a Main class that demonstrates all methods and includes exception handling.
+AI: Here's a complete implementation for your AreaCalculator class with overloaded methods. I've included proper validation and exception handling as required...
+Me: I'm getting "cannot find symbol" errors when compiling. The Main class can't find AreaCalculator.
+AI: This is a compilation order issue. You need to either compile both files together using javac *.java or add import statements. Also make sure you're running from the correct directory level...
+Me: Now I'm getting "Could not find or load main class" error.
+AI: This means you're not running from the correct directory. Navigate to your src directory and run with the full package name: java org.howard.edu.lsp.midterm.question2.Main...

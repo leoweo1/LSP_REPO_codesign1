@@ -1,0 +1,10 @@
+AI Tool: ChatGPT
+
+Date: 10/20/2025
+
+ME: I need to implement a smart campus device system in Java with abstract classes and interfaces. There's an abstract Device class, Networked and BatteryPowered interfaces, and three concrete devices: DoorLock, Thermostat, and Camera. Can you help me structure this?
+AI: Here's the complete implementation for your smart campus system. I'll provide all the required files: the abstract Device class, two interfaces, and three concrete device classes that extend Device and implement the appropriate interfaces...
+ME: I'm getting compilation errors - "cannot find symbol" for all the classes in Main.java.
+AI: You need to compile all files together since they have interdependencies. Use javac *.java in the question4 directory, or compile from the src root directory...
+ME: Now I'm getting "Could not find or load main class" error when trying to run.
+AI: This is a common package structure issue. You need to run from the src directory using the fully qualified class name: java org.howard.edu.lsp.midterm.question4.Main...
